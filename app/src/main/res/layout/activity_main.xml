@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/SenderFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="parent">
+
+        <fragment
+            tools:layout="@layout/sender_fragment_layout"
+            android:layout_centerInParent="true"
+            android:id="@+id/senderFragment"
+            android:name="com.example.eventbusexample.SenderFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:padding="16dp"
+        android:id="@+id/FirstSubscriberFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toBottomOf="@id/SenderFragmentContainer">
+
+        <fragment
+            android:id="@+id/firstSubscriberFragment"
+            android:name="com.example.eventbusexample.FirstSubscriberFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/first_subscriber_fragment"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#bef7dc"
+        android:id="@+id/SecondSubscriberFragmentContainer"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        app:layout_constraintTop_toBottomOf="@id/FirstSubscriberFragmentContainer">
+
+        <fragment
+            android:id="@+id/secondSubscriberFragment"
+            android:name="com.example.eventbusexample.SecondSubscriberFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/second_subscriber_fragment"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

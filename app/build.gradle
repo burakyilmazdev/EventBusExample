@@ -37,4 +37,7 @@ dependencies {
 
     //Fragment
     implementation "androidx.fragment:fragment:$fragment_version"
+
+    //EventBus
+    implementation 'org.greenrobot:eventbus:3.2.0'
 }

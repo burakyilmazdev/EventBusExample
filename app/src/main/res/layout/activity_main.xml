@@ -21,7 +21,7 @@
             tools:layout="@layout/sender_fragment_layout"
             android:layout_centerInParent="true"
             android:id="@+id/senderFragment"
-            android:name="com.example.eventbusexample.SenderFragment"
+            android:name="com.example.eventbusexample.Fragments.SenderFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
@@ -36,7 +36,7 @@
 
         <fragment
             android:id="@+id/firstSubscriberFragment"
-            android:name="com.example.eventbusexample.FirstSubscriberFragment"
+            android:name="com.example.eventbusexample.Fragments.FirstSubscriberFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:layout="@layout/first_subscriber_fragment"/>
@@ -55,7 +55,7 @@
 
         <fragment
             android:id="@+id/secondSubscriberFragment"
-            android:name="com.example.eventbusexample.SecondSubscriberFragment"
+            android:name="com.example.eventbusexample.Fragments.SecondSubscriberFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:layout="@layout/second_subscriber_fragment"/>
